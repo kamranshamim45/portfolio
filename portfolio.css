@@ -9,17 +9,19 @@ body {
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
   color: #fff;
+  background-color: var(--bg-color);
+  color:var(--text-color);
 }
 :root {
-  --bg-color: #f3f4f6;
-  --text-color: #1f2937;
+  --bg-color: #ffffff;
+  --text-color: #000000;
   --button-bg: #e5e7eb;
   --button-hover: #d1d5db;
 }
 
 [data-theme="dark"] {
-  --bg-color: #111827;
-  --text-color: #f9fafb;
+  --bg-color: #121212;
+  --text-color: #ffffffff;
   --button-bg: #374151;
   --button-hover: #4b5563;
 }
