@@ -25,28 +25,25 @@ document.querySelectorAll('nav a').forEach(anchor => {
 });
 
 // Get the form element
-const form = document.getElementById('contact-form');
-
-// Add a submit event listener
-form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the form from submitting
-
-    // Get form data
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-
-    // Display the data in the console
-    console.log('Name:', name);
-    console.log('Email:', email);
-    console.log('Message:', message);
-
-    // Show a success message
-    alert(`Thank you, ${name}! Your message has been sent.`);
-
-    // Clear the form
-    form.reset();
-});
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contact-form');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+  
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const name = nameInput.value;
+        const email = emailInput.value;
+        const message = messageInput.value;
+  
+        console.log('Name:', name);
+        console.log('Email:', email);
+        console.log('Message:', message);
+        alert(`Thank you, ${name}! Your message has been sent.`);
+        form.reset();
+    });
+  });
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
