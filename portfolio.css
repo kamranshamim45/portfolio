@@ -1,5 +1,4 @@
 
-
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -357,4 +356,49 @@ footer a:hover {
   color: white;
   transform: translateY(-2px);
 }
+
+.certifications {
+  padding: 20px;
+  margin: 20px 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: fadeInUp 1s ease-out;
+  color: #fff;
+}
+
+.certifications h2 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.certifications ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.certifications ul li {
+  background: rgba(255, 255, 255, 0.2);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certifications ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.certifications ul li a {
+  color: #ff6347;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.certifications ul li a:hover {
+  text-decoration: underline;
+}
+
 
